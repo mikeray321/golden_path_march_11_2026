@@ -1,0 +1,19 @@
+name: Hello World Workflow
+
+# This defines when the automation runs (on every push to the repository)
+on: [push]
+
+jobs:
+  # A job is a group of steps that run on the same runner
+  say-hello-job:
+    # This tells GitHub to use their hosted Ubuntu Linux runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your code so the runner can see it
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Run a simple shell command
+      - name: Greet the user
+        run: echo "Hello, World! This is running on a GitHub-hosted runner."
