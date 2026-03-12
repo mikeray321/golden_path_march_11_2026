@@ -20,4 +20,4 @@ EXPOSE 5000
 RUN useradd -m appuser
 USER appuser
 
-CMD ["python", "app.main.py"]
+CMD ["python", "app/main.py"]
