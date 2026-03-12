@@ -5,7 +5,7 @@ Golden Path Test
 
     Clone the repo: git clone https://github.com/mikeray321/golden_path_march_11_2026.git
 
-    Start the app: docker-compose up --build
+    Start the app: docker compose up --build
 
     View the app: Open http://localhost:5000
 
